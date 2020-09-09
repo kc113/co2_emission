@@ -4,11 +4,12 @@ library(dplyr)
 library(urca)
 library(forecast)
 #read the data set
-c_data = read.csv("carbondioxide.csv")
+c_data = read.csv("data/carbondioxide.csv")
 #plot the line diagram
 ggplot(c_data, aes( x = 1:nrow(c_data), y = average)) +
   geom_line() +
   labs(x = "ID", y = "Monthly Mean Carbon Emission(in ppm)")
+ggsave("output/co2plot.jpg")
 #check the seasonality from the data
 for(y in 1990:2020){
   year_data = subset(c_data, year == y)
@@ -23,6 +24,7 @@ split_ts = decompose(x_ts, type = "additive")
 #deseasonalize the time series
 x_des_ts = split_ts$x - split_ts$seasonal
 autoplot(x_des_ts)
+ggsave("output/co2deseasonlized.jpg")
 #perform the ADF test
 c_adf = ur.df(x_des_ts, type = "trend", selectlags = c("AIC"))
 summary(c_adf)
@@ -92,7 +94,7 @@ View(t3)
 #forecast the value for next 5 years
 fit1 = Arima(x_ts, order = c(3,1,0), seasonal = c(0,1,1))
 autoplot(forecast(fit1, h = 60))
-
+ggsave("output/co2predict.jpg")
 
 
 
