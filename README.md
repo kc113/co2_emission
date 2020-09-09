@@ -1,2 +1,2 @@
 # co2_emission
-Time series analysis of carbon dioxide emission
+Prediction of carbon dioxide emission from monthly time series data
