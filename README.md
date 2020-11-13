@@ -35,6 +35,6 @@ Source - https://www.esrl.noaa.gov/gmd/ccgg/trends/gl_data.html
 
 ## Conclusion
 
-! [alt text] (https://github.com/kc113/co2_emission/blob/master/output/co2predict.jpg?raw=true)
+![alt text](https://github.com/kc113/co2_emission/blob/master/output/co2predict.jpg?raw=true)
 
 From the above plot, it can be concluded that the carbon emission level will increase in the upcoming years, which is not a good sign for the earth.
