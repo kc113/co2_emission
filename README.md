@@ -2,15 +2,20 @@
 
 ## Problem Statement 
 
-Forecasting of carbon dioxide emission from monthly mean data using univariate time series analysis
+Forecasting of carbon dioxide emission at Mauna Loa, Hawaii from monthly mean data using univariate time series analysis
 
 ## Data Collection
 
 Variable - Monthly mean CO2 in parts per million collected at Mauna Loa, Hawaii
+
 Start date - Jan 1990
+
 End date - Jun 2020
+
 Frequency - Monthly data
+
 Observations - 366
+
 Source - https://www.esrl.noaa.gov/gmd/ccgg/trends/gl_data.html
 
 ## Stepwise Analysis
